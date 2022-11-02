@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20 20 20);
+    height: 100vh;
+}
+
+.head {
+    background-color: rgb(255 255 255 / 0.02);
+    position: relative;
+    /* cursor: pointer; */
+}
+
+.head::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(600px circle at 100px 100px, rgb(255 255 255 / 0.06), transparent 40%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
