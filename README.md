@@ -1,0 +1,1 @@
+random projects made while learning/practicing coding
