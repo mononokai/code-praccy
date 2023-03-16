@@ -10,9 +10,6 @@ const profile = {
     },
 };
 
-// this is how we would destructure the age variable from the profile object
-// because of this, we have to lay out the structure of profile to specify the
-// property in the object
 const { age }: { age: number } = profile;
 
 const {
