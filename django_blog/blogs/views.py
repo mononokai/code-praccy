@@ -7,7 +7,7 @@ from .forms import PostForm
 def index(request):
     posts = BlogPost.objects.order_by('date_added')
     context = {'posts': posts}
-    return render(request, 'blogs/index.html', context) 
+    return render(request, 'index.html', context) 
 
 
 # Create a new post
@@ -21,4 +21,4 @@ def new_post(request):
             return redirect('blogs:index')
     
     context = {'form': form}
-    return render(request, 'blogs/new_post.html', context)
+    return render(request, 'new_post.html', context)
